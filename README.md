@@ -1,3 +1,13 @@
+## About
+
+This is a demo site to create a React app with authorization.
+Making sure that the user is required to login into the app to access the private area.
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
