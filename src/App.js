@@ -6,11 +6,12 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { Redirect } from 'react-router';
 
 import LoginPage from './pages/LoginPage';
 import PrivatePage from './pages/PrivatePage';
 import NotFoundPage from './pages/NotFoundPage';
+
+import AuthenticatedRoute from "./auth/AuthenticatedRoute";
 
 import Button from '@material-ui/core/Button';
 
@@ -31,7 +32,7 @@ function App() {
                 </Button>
             </Route>
             <Route path={"/login"} component={LoginPage} exact />
-            <Route path={"/private"} component={PrivatePage} exact />
+            <AuthenticatedRoute path={"/private"} component={PrivatePage} exact />
             <Route component={NotFoundPage} />
           </Switch>
         </header>
