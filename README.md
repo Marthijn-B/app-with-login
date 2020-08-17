@@ -6,7 +6,7 @@ Making sure that the user is required to login into the app to access the privat
 
 
 
-
+## Bootstrap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

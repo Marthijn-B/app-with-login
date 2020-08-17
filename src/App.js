@@ -9,7 +9,10 @@ import {
 import { Redirect } from 'react-router';
 
 import LoginPage from './pages/LoginPage';
+import PrivatePage from './pages/PrivatePage';
 import NotFoundPage from './pages/NotFoundPage';
+
+import Button from '@material-ui/core/Button';
 
 
 function App() {
@@ -20,12 +23,15 @@ function App() {
           <Switch>
             <Route path={"/"} exact>
               <h3>Main "/" page</h3>
+                <Button variant="outlined" color="primary" href="/login">
+                  Login Page
+                </Button>
+                <Button variant="outlined" color="primary" href="/private">
+                  Private Page
+                </Button>
             </Route>
-            <Route path={"/login"} component={LoginPage} exact>
-            </Route>
-            <Route path={"/private"} exact>
-              <h3>This is the private page</h3>
-            </Route>
+            <Route path={"/login"} component={LoginPage} exact />
+            <Route path={"/private"} component={PrivatePage} exact />
             <Route component={NotFoundPage} />
           </Switch>
         </header>

@@ -2,13 +2,13 @@ import React from 'react';
 
 import Typography from '@material-ui/core/Typography';
 
-
 import Button from '@material-ui/core/Button';
 
-const NotFoundPage = () => (
+const PrivatePage = () => (
   <>
     <Typography variant="h2" gutterBottom>
-      404: Page Not Found
+    This is the private page.
+    Should only be accessed through a sucessful login
     </Typography>
     <Button variant="outlined" color="primary" href="/">
       Return to main page
@@ -16,4 +16,4 @@ const NotFoundPage = () => (
   </>
 )
 
-export default NotFoundPage;
+export default PrivatePage;
