@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   card: {
-    width: '45%',
+    width: '400px',
     padding: '30px',
   },
   button: {
@@ -50,7 +50,7 @@ const LoginPage = () => {
     <>
       <Card className={classes.card}>
       <Typography variant="h2" gutterBottom>
-        Sign in to proceed
+        Sign in
       </Typography>
       <form className={classes.root} noValidate autoComplete="off">
         <TextField
@@ -61,6 +61,7 @@ const LoginPage = () => {
           onChange={(event) => handleUsernameChange(event)}
         />
         <TextField
+          className={classes.textField}
           id="password"
           label="Password"
           variant="outlined"
